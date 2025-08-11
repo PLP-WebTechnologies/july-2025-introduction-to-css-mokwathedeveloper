@@ -4,6 +4,8 @@
  * Each rule is commented to explain its purpose.
  */
 
+/* ... (previous styles remain unchanged) ... */
+
 /*
  * Universal Box Sizing
  * Why: This rule ensures that padding and borders are included in the total
@@ -56,6 +58,44 @@ p {
 }
 
 /*
+ * Navigation Styles
+ * Why: To create a clean, centered navigation bar.
+ */
+nav {
+    text-align: center; /* Center the inline-block list items */
+    background: #333; /* Dark background for the nav bar */
+    padding: 10px 0; /* Vertical padding */
+}
+
+nav ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; /* Allows items to sit side-by-side */
+}
+
+/*
+ * Navigation Link Styles
+ * Why: To style links as clear, clickable buttons.
+ * - padding: Creates space around the link text, increasing clickable area.
+ * - background-color: Visual cue for the button area.
+ * - border: Defines the edge of the button.
+ * - margin: Creates space between the buttons.
+ */
+nav a {
+    display: inline-block; /* Allows box model properties to apply */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border: 2px solid #fff; /* White border */
+    margin: 0 10px; /* Horizontal margin between links */
+    background-color: #555;
+}
+
+/*
  * Container Styles
  * Why: To create a centered, fixed-width content area and demonstrate the Box Model.
  * - width/max-width: Defines the content area size.
@@ -86,4 +126,16 @@ p {
     border: 5px solid #e74c3c; /* A solid red border */
     margin: 20px; /* Pushes this box away from the container's edges */
     background-color: #fff; /* White background for the content itself */
+}
+
+/*
+ * Footer Styles
+ * Why: To provide a clear closing for the page.
+ */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
 }
