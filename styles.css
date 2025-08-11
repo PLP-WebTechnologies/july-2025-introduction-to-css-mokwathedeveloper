@@ -35,6 +35,7 @@ h1 {
     font-size: 2.5em;
     color: #333;
     text-align: center; /* Center the main heading */
+    padding: 20px; /* Add some space around the main heading */
 }
 
 h2 {
@@ -51,19 +52,38 @@ h2 {
 p {
     font-size: 1.2em;
     color: #555;
+    line-height: 1.6; /* Improves readability */
 }
 
 /*
  * Container Styles
- * Why: To create a centered, fixed-width content area.
- * - width: Sets a responsive width for the container.
- * - max-width: Prevents the container from becoming too wide on large screens.
- * - margin: '20px auto' adds vertical spacing and centers the block horizontally.
- * - background-color: A distinct color to visualize the container's area.
+ * Why: To create a centered, fixed-width content area and demonstrate the Box Model.
+ * - width/max-width: Defines the content area size.
+ * - margin: Centers the container and provides space from the viewport edges.
+ * - padding: Creates space between the container's border and its content.
+ * - border: A visible line to clearly define the container's edge.
+ * - background-color: Helps visualize the padding area.
  */
 .container {
     width: 80%;
     max-width: 960px;
-    margin: 20px auto;
-    background-color: #fff;
+    margin: 20px auto; /* Top/bottom margin of 20px, auto left/right for centering */
+    padding: 20px; /* 20px of space inside the border */
+    border: 10px solid #3498db; /* A solid blue border */
+    background-color: #ecf0f1; /* Light grey background to see the padding */
+}
+
+/*
+ * Box Model Content Styles
+ * Why: To explicitly demonstrate the different parts of the box model.
+ * - padding: Space between the content (text) and the border.
+ * - border: A visible line defining the edge of the content box.
+ * - margin: Space outside the border, pushing other elements away.
+ * - background-color: Helps visualize the content and its padding area.
+ */
+.box-model-content {
+    padding: 30px; /* Generous space inside this box */
+    border: 5px solid #e74c3c; /* A solid red border */
+    margin: 20px; /* Pushes this box away from the container's edges */
+    background-color: #fff; /* White background for the content itself */
 }
