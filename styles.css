@@ -1,18 +1,8 @@
 /*
  * styles.css
  * This file contains the styles for the CSS Box Model Demonstration page.
- *
- * Structure:
- * 1. Universal Styles
- * 2. Body and Typography
- * 3. Header and Navigation
- * 4. Main Content and Container
- * 5. Box Model Demonstration
- * 6. Footer
+ * Each rule is commented to explain its purpose.
  */
-
-/* 1. Universal Styles
- * ============================================ */
 
 /*
  * Universal Box Sizing
@@ -23,137 +13,13 @@
     box-sizing: border-box;
 }
 
-/* 2. Body and Typography
- * ============================================ */
-
 /*
  * Body Styles
  * Why: Sets a consistent baseline for the entire page.
  * - font-family: A clean, modern, and widely available sans-serif font stack.
  * - margin: Resets the default browser margin to prevent unwanted spacing.
- * - background-color: Provides a soft, neutral background for the page.
  */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-}
-
-/*
- * Heading Styles
- * Why: Establishes a clear visual hierarchy for page content.
- */
-h1 {
-    font-size: 2.5em;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    color: #444;
-}
-
-/*
- * Paragraph Styles
- * Why: Ensures body text is legible and well-spaced.
- */
-p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.6; /* Improves readability of long text blocks */
-}
-
-/* 3. Header and Navigation
- * ============================================ */
-
-header {
-    background: #fff; /* White background for the header area */
-    border-bottom: 1px solid #ddd; /* Subtle line to separate header */
-}
-
-nav {
-    text-align: center;
-    background: #333;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-}
-
-/*
- * Navigation Link Styles
- * Why: To style links as clear, clickable buttons.
- */
-nav a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid #555;
-    margin: 0 10px;
-    background-color: #555;
-}
-
-/*
- * Navigation Link Hover State
- * Why: Provides visual feedback to the user on interaction.
- */
-nav a:hover {
-    background-color: #3498db; /* Changes color on hover */
-    border-color: #3498db;
-}
-
-/* 4. Main Content and Container
- * ============================================ */
-
-main {
-    padding: 20px 0; /* Adds vertical spacing for the main content area */
-}
-
-/*
- * Container Styles
- * Why: To create a centered, fixed-width content area.
- */
-.container {
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto; /* '0 auto' centers the block with no vertical margin */
-    background-color: #ecf0f1;
-    border: 10px solid #3498db;
-    padding: 20px;
-}
-
-/* 5. Box Model Demonstration
- * ============================================ */
-
-/*
- * Box Model Content Styles
- * Why: To explicitly demonstrate the different parts of the box model.
- */
-.box-model-content {
-    padding: 30px;
-    border: 5px solid #e74c3c;
-    margin: 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-/* 6. Footer
- * ============================================ */
-
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
 }
